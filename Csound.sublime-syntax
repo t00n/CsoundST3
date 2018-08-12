@@ -14,6 +14,8 @@ contexts:
       push: python
     - match: \b(sr|kr|ksmps|nchnls|0dbfs)\b
       scope: entity.name.tag.csound
+    - match: \bp\d+\b
+      scope: entity.name.tag.csound
     - include: numeric
     - match: (<CsOptions>|<CsLicense>)
       scope: entity.name.tag.csound
@@ -119,4 +121,3 @@ contexts:
 
   prototype:
     - include: comments
-    
